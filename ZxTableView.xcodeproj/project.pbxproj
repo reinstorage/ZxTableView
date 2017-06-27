@@ -21,6 +21,9 @@
 		29D38AC31F0245510060CB15 /* ZxBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38AC21F0245510060CB15 /* ZxBaseItem.m */; };
 		29D38AC61F024A4D0060CB15 /* ZxTableViewBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38AC51F024A4D0060CB15 /* ZxTableViewBaseItem.m */; };
 		29D38AC91F024BD90060CB15 /* ZxTableViewSectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38AC81F024BD90060CB15 /* ZxTableViewSectionObject.m */; };
+		29D38ACC1F0251ED0060CB15 /* ZxBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38ACB1F0251ED0060CB15 /* ZxBaseTableViewCell.m */; };
+		29D38ACF1F0253990060CB15 /* ZxTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38ACE1F0253990060CB15 /* ZxTableViewDataSource.m */; };
+		29D38AD21F025C4B0060CB15 /* ZxBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38AD11F025C4B0060CB15 /* ZxBaseTableView.m */; };
 		84E7FAFB43080D5D3F47C360 /* libPods-ZxTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B46894A27374F48770F3108 /* libPods-ZxTableView.a */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +73,12 @@
 		29D38AC51F024A4D0060CB15 /* ZxTableViewBaseItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxTableViewBaseItem.m; sourceTree = "<group>"; };
 		29D38AC71F024BD90060CB15 /* ZxTableViewSectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxTableViewSectionObject.h; sourceTree = "<group>"; };
 		29D38AC81F024BD90060CB15 /* ZxTableViewSectionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxTableViewSectionObject.m; sourceTree = "<group>"; };
+		29D38ACA1F0251ED0060CB15 /* ZxBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxBaseTableViewCell.h; sourceTree = "<group>"; };
+		29D38ACB1F0251ED0060CB15 /* ZxBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxBaseTableViewCell.m; sourceTree = "<group>"; };
+		29D38ACD1F0253990060CB15 /* ZxTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxTableViewDataSource.h; sourceTree = "<group>"; };
+		29D38ACE1F0253990060CB15 /* ZxTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxTableViewDataSource.m; sourceTree = "<group>"; };
+		29D38AD01F025C4B0060CB15 /* ZxBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxBaseTableView.h; sourceTree = "<group>"; };
+		29D38AD11F025C4B0060CB15 /* ZxBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxBaseTableView.m; sourceTree = "<group>"; };
 		2B46894A27374F48770F3108 /* libPods-ZxTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZxTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59E3B75E2D928B7D0AB040EB /* Pods-ZxTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZxTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZxTableView/Pods-ZxTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		A38AA20484756907735B05D3 /* Pods-ZxTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZxTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZxTableView/Pods-ZxTableView.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +205,12 @@
 				29D38AC51F024A4D0060CB15 /* ZxTableViewBaseItem.m */,
 				29D38AC71F024BD90060CB15 /* ZxTableViewSectionObject.h */,
 				29D38AC81F024BD90060CB15 /* ZxTableViewSectionObject.m */,
+				29D38ACA1F0251ED0060CB15 /* ZxBaseTableViewCell.h */,
+				29D38ACB1F0251ED0060CB15 /* ZxBaseTableViewCell.m */,
+				29D38ACD1F0253990060CB15 /* ZxTableViewDataSource.h */,
+				29D38ACE1F0253990060CB15 /* ZxTableViewDataSource.m */,
+				29D38AD01F025C4B0060CB15 /* ZxBaseTableView.h */,
+				29D38AD11F025C4B0060CB15 /* ZxBaseTableView.m */,
 			);
 			path = ZxBaseTableViewController;
 			sourceTree = "<group>";
@@ -419,8 +434,11 @@
 				29D38AC31F0245510060CB15 /* ZxBaseItem.m in Sources */,
 				29D38AB71F02411A0060CB15 /* UIView+ZxExtension.m in Sources */,
 				29D38AB61F02411A0060CB15 /* NSDictionary+ZxExtension.m in Sources */,
+				29D38ACF1F0253990060CB15 /* ZxTableViewDataSource.m in Sources */,
 				29D38ABD1F0242A50060CB15 /* DemoViewController.m in Sources */,
+				29D38AD21F025C4B0060CB15 /* ZxBaseTableView.m in Sources */,
 				29D38A791F023FD10060CB15 /* main.m in Sources */,
+				29D38ACC1F0251ED0060CB15 /* ZxBaseTableViewCell.m in Sources */,
 				29D38AC61F024A4D0060CB15 /* ZxTableViewBaseItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

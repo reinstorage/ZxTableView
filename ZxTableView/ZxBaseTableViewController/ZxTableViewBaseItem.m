@@ -8,6 +8,8 @@
 
 #import "ZxTableViewBaseItem.h"
 
+CGFloat const CellInvalidHeight = -1;
+
 @implementation ZxTableViewBaseItem
 
 -(instancetype)init{

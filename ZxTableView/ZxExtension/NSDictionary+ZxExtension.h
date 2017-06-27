@@ -50,7 +50,7 @@
 /*!
  @brief   获取给定的key值，返回类型为number
  @param   path  给定的路径
- @param   otherwise  默认值，当找不到给定的obj，返回other
+ @param   other  默认值，当找不到给定的obj，返回other
  @return  key值 or other
  */
 - (NSNumber *)numberAtPath:(NSString *)path otherwise:(NSNumber *)other;
@@ -66,14 +66,14 @@
 /*!
  @brief   获取给定的key值，返回类型为string
  @param   path  给定的路径
- @param   otherwise  默认值，当找不到给定的obj，返回otherwise
+ @param   other  默认值，当找不到给定的obj，返回otherwise
  @return  key值 or otherwise
  */
 - (NSString *)stringAtPath:(NSString *)path otherwise:(NSString *)other;
 
 /*!
  @brief   获取给定的key值，返回类型为NSArray
- @param   path:给定的路径
+ @param   path 给定的路径
  @return  key值 or nil
  */
 - (NSArray *)arrayAtPath:(NSString *)path;
@@ -81,21 +81,21 @@
 /*!
  @brief   获取给定的key值，返回类型为NSArray
  @param   path  给定的路径
- @param   otherwise  默认值，当找不到给定的obj，返回otherwise
+ @param   other  默认值，当找不到给定的obj，返回otherwise
  @return  key值 or otherwise
  */
 - (NSArray *)arrayAtPath:(NSString *)path otherwise:(NSArray *)other;
 
 /*!
  @brief   获取给定的key值，返回类型为NSMutableArray
- @param   path:给定的路径
+ @param   path  给定的路径
  @return  key值 or nil
  */
 - (NSMutableArray *)mutableArrayAtPath:(NSString *)path;
 
 /*!
  @brief   获取给定的key值，返回类型为NSMutableArray
- @param   path:给定的路径
+ @param   path 给定的路径
  @param   otherwise:默认值，当找不到给定的obj，返回otherwise
  @return  key值 or otherwise
  */
@@ -146,8 +146,8 @@
 
 /*!
  @brief  安全添加键值对
- @param  anObject: value
- @param  forKey:key
+ @param  anObject value
+ @param  aKey
  */
 - (void)safeSetObject:(id)anObject forKey:(id<NSCopying>)aKey;
 
