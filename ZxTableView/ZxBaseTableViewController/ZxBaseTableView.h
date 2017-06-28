@@ -11,7 +11,7 @@
 
 @class ZxTableViewSectionObject;
 
-@protocol ZxBaseTableViewDelegate <UITableViewDelegate>
+@protocol ZxTableViewDelegate <UITableViewDelegate>
 
 @optional
 
@@ -40,7 +40,7 @@
 
 @property (nonatomic, assign) id<ZxTableViewDataSource> ZxDataSource;
 
-@property (nonatomic, assign)id<ZxBaseTableViewDelegate> ZxDelegate;
+@property (nonatomic, assign)id<ZxTableViewDelegate> ZxDelegate;
 
 // 是否需要下拉刷新和上拉加载
 @property (nonatomic, assign) BOOL isNeedPullDownToRefreshAction;

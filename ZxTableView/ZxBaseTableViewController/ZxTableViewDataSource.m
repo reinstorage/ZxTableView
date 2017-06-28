@@ -36,7 +36,7 @@
 }
 
 - (void)appendItem:(ZxTableViewBaseItem *)item{
-    ZxTableViewSectionObject *firstSectionObject = [self.sections firstObject];
+    ZxTableViewSectionObject *firstSectionObject = [self.sections objectAtIndex:0];
     [firstSectionObject.items addObject:item];
 }
 
@@ -49,7 +49,7 @@
     return 0;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     ZxTableViewBaseItem *object = [self tableView:tableView objectForRowAtIndexPath:indexPath];
     

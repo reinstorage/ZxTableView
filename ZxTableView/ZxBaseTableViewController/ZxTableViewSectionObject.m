@@ -21,7 +21,7 @@
 }
 
 -(instancetype)initWithItemArray:(NSMutableArray *)items{
-    self = [super init];
+    self = [self init];
     if (self) {
         [self.items addObjectsFromArray:items];
     }

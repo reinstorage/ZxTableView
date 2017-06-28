@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2939BA971F033F36002A9849 /* ZxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BA961F033F36002A9849 /* ZxTableViewController.m */; };
+		2939BA9A1F034591002A9849 /* ZxBaseServerAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BA991F034591002A9849 /* ZxBaseServerAPI.m */; };
+		2939BA9E1F0380B1002A9849 /* ZxBaseListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BA9D1F0380B1002A9849 /* ZxBaseListItem.m */; };
+		2939BAA11F038166002A9849 /* ZxBaseListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BAA01F038166002A9849 /* ZxBaseListModel.m */; };
+		2939BAA41F0385A1002A9849 /* ZxRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BAA31F0385A1002A9849 /* ZxRefreshTableViewController.m */; };
+		2939BAA71F03878E002A9849 /* DemoTableModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BAA61F03878E002A9849 /* DemoTableModel.m */; };
+		2939BAAA1F0387BD002A9849 /* DemoTableItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BAA91F0387BD002A9849 /* DemoTableItem.m */; };
+		2939BAAD1F0387DD002A9849 /* DemoTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BAAC1F0387DD002A9849 /* DemoTableViewDataSource.m */; };
+		2939BAB01F038835002A9849 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2939BAAF1F038835002A9849 /* DemoTableViewCell.m */; };
+		2939BAB21F039773002A9849 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2939BAB11F039773002A9849 /* Info.plist */; };
 		29D38A791F023FD10060CB15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38A781F023FD10060CB15 /* main.m */; };
 		29D38A7C1F023FD10060CB15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29D38A7B1F023FD10060CB15 /* AppDelegate.m */; };
 		29D38A821F023FD10060CB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29D38A801F023FD10060CB15 /* Main.storyboard */; };
@@ -45,6 +55,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2939BA951F033F36002A9849 /* ZxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxTableViewController.h; sourceTree = "<group>"; };
+		2939BA961F033F36002A9849 /* ZxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxTableViewController.m; sourceTree = "<group>"; };
+		2939BA981F034591002A9849 /* ZxBaseServerAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxBaseServerAPI.h; sourceTree = "<group>"; };
+		2939BA991F034591002A9849 /* ZxBaseServerAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxBaseServerAPI.m; sourceTree = "<group>"; };
+		2939BA9C1F0380B1002A9849 /* ZxBaseListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxBaseListItem.h; sourceTree = "<group>"; };
+		2939BA9D1F0380B1002A9849 /* ZxBaseListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxBaseListItem.m; sourceTree = "<group>"; };
+		2939BA9F1F038166002A9849 /* ZxBaseListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxBaseListModel.h; sourceTree = "<group>"; };
+		2939BAA01F038166002A9849 /* ZxBaseListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxBaseListModel.m; sourceTree = "<group>"; };
+		2939BAA21F0385A1002A9849 /* ZxRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxRefreshTableViewController.h; sourceTree = "<group>"; };
+		2939BAA31F0385A1002A9849 /* ZxRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxRefreshTableViewController.m; sourceTree = "<group>"; };
+		2939BAA51F03878E002A9849 /* DemoTableModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableModel.h; sourceTree = "<group>"; };
+		2939BAA61F03878E002A9849 /* DemoTableModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableModel.m; sourceTree = "<group>"; };
+		2939BAA81F0387BD002A9849 /* DemoTableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableItem.h; sourceTree = "<group>"; };
+		2939BAA91F0387BD002A9849 /* DemoTableItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableItem.m; sourceTree = "<group>"; };
+		2939BAAB1F0387DD002A9849 /* DemoTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewDataSource.h; sourceTree = "<group>"; };
+		2939BAAC1F0387DD002A9849 /* DemoTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewDataSource.m; sourceTree = "<group>"; };
+		2939BAAE1F038835002A9849 /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
+		2939BAAF1F038835002A9849 /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
+		2939BAB11F039773002A9849 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D38A741F023FD10060CB15 /* ZxTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZxTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D38A781F023FD10060CB15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29D38A7A1F023FD10060CB15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,7 +81,6 @@
 		29D38A811F023FD10060CB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29D38A831F023FD10060CB15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29D38A861F023FD10060CB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		29D38A881F023FD10060CB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29D38A8D1F023FD20060CB15 /* ZxTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZxTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29D38A911F023FD20060CB15 /* ZxTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZxTableViewTests.m; sourceTree = "<group>"; };
 		29D38A931F023FD20060CB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +138,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2939BA9B1F038096002A9849 /* ZxBaseListModel */ = {
+			isa = PBXGroup;
+			children = (
+				2939BA9C1F0380B1002A9849 /* ZxBaseListItem.h */,
+				2939BA9D1F0380B1002A9849 /* ZxBaseListItem.m */,
+				2939BA9F1F038166002A9849 /* ZxBaseListModel.h */,
+				2939BAA01F038166002A9849 /* ZxBaseListModel.m */,
+				2939BAA21F0385A1002A9849 /* ZxRefreshTableViewController.h */,
+				2939BAA31F0385A1002A9849 /* ZxRefreshTableViewController.m */,
+			);
+			path = ZxBaseListModel;
+			sourceTree = "<group>";
+		};
 		29D38A6B1F023FD10060CB15 = {
 			isa = PBXGroup;
 			children = (
@@ -142,9 +183,9 @@
 				29D38A7A1F023FD10060CB15 /* AppDelegate.h */,
 				29D38A7B1F023FD10060CB15 /* AppDelegate.m */,
 				29D38A801F023FD10060CB15 /* Main.storyboard */,
+				2939BAB11F039773002A9849 /* Info.plist */,
 				29D38A831F023FD10060CB15 /* Assets.xcassets */,
 				29D38A851F023FD10060CB15 /* LaunchScreen.storyboard */,
-				29D38A881F023FD10060CB15 /* Info.plist */,
 				29D38A771F023FD10060CB15 /* Supporting Files */,
 			);
 			path = ZxTableView;
@@ -190,10 +231,13 @@
 		29D38AB81F0242090060CB15 /* ZxBaseModel */ = {
 			isa = PBXGroup;
 			children = (
+				2939BA9B1F038096002A9849 /* ZxBaseListModel */,
 				29D38ABE1F02451F0060CB15 /* ZxBaseModel.h */,
 				29D38ABF1F02451F0060CB15 /* ZxBaseModel.m */,
 				29D38AC11F0245510060CB15 /* ZxBaseItem.h */,
 				29D38AC21F0245510060CB15 /* ZxBaseItem.m */,
+				2939BA981F034591002A9849 /* ZxBaseServerAPI.h */,
+				2939BA991F034591002A9849 /* ZxBaseServerAPI.m */,
 			);
 			path = ZxBaseModel;
 			sourceTree = "<group>";
@@ -211,6 +255,8 @@
 				29D38ACE1F0253990060CB15 /* ZxTableViewDataSource.m */,
 				29D38AD01F025C4B0060CB15 /* ZxBaseTableView.h */,
 				29D38AD11F025C4B0060CB15 /* ZxBaseTableView.m */,
+				2939BA951F033F36002A9849 /* ZxTableViewController.h */,
+				2939BA961F033F36002A9849 /* ZxTableViewController.m */,
 			);
 			path = ZxBaseTableViewController;
 			sourceTree = "<group>";
@@ -220,6 +266,14 @@
 			children = (
 				29D38ABB1F0242A50060CB15 /* DemoViewController.h */,
 				29D38ABC1F0242A50060CB15 /* DemoViewController.m */,
+				2939BAA51F03878E002A9849 /* DemoTableModel.h */,
+				2939BAA61F03878E002A9849 /* DemoTableModel.m */,
+				2939BAA81F0387BD002A9849 /* DemoTableItem.h */,
+				2939BAA91F0387BD002A9849 /* DemoTableItem.m */,
+				2939BAAB1F0387DD002A9849 /* DemoTableViewDataSource.h */,
+				2939BAAC1F0387DD002A9849 /* DemoTableViewDataSource.m */,
+				2939BAAE1F038835002A9849 /* DemoTableViewCell.h */,
+				2939BAAF1F038835002A9849 /* DemoTableViewCell.m */,
 			);
 			path = ZxDemo;
 			sourceTree = "<group>";
@@ -353,6 +407,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2939BAB21F039773002A9849 /* Info.plist in Resources */,
 				29D38A871F023FD10060CB15 /* LaunchScreen.storyboard in Resources */,
 				29D38A841F023FD10060CB15 /* Assets.xcassets in Resources */,
 				29D38A821F023FD10060CB15 /* Main.storyboard in Resources */,
@@ -428,18 +483,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2939BA9E1F0380B1002A9849 /* ZxBaseListItem.m in Sources */,
 				29D38AC01F02451F0060CB15 /* ZxBaseModel.m in Sources */,
 				29D38AC91F024BD90060CB15 /* ZxTableViewSectionObject.m in Sources */,
+				2939BAAD1F0387DD002A9849 /* DemoTableViewDataSource.m in Sources */,
 				29D38A7C1F023FD10060CB15 /* AppDelegate.m in Sources */,
 				29D38AC31F0245510060CB15 /* ZxBaseItem.m in Sources */,
 				29D38AB71F02411A0060CB15 /* UIView+ZxExtension.m in Sources */,
+				2939BAA11F038166002A9849 /* ZxBaseListModel.m in Sources */,
+				2939BAB01F038835002A9849 /* DemoTableViewCell.m in Sources */,
+				2939BAAA1F0387BD002A9849 /* DemoTableItem.m in Sources */,
+				2939BAA71F03878E002A9849 /* DemoTableModel.m in Sources */,
 				29D38AB61F02411A0060CB15 /* NSDictionary+ZxExtension.m in Sources */,
+				2939BAA41F0385A1002A9849 /* ZxRefreshTableViewController.m in Sources */,
 				29D38ACF1F0253990060CB15 /* ZxTableViewDataSource.m in Sources */,
 				29D38ABD1F0242A50060CB15 /* DemoViewController.m in Sources */,
 				29D38AD21F025C4B0060CB15 /* ZxBaseTableView.m in Sources */,
 				29D38A791F023FD10060CB15 /* main.m in Sources */,
+				2939BA9A1F034591002A9849 /* ZxBaseServerAPI.m in Sources */,
 				29D38ACC1F0251ED0060CB15 /* ZxBaseTableViewCell.m in Sources */,
 				29D38AC61F024A4D0060CB15 /* ZxTableViewBaseItem.m in Sources */,
+				2939BA971F033F36002A9849 /* ZxTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

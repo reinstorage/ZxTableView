@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZxRefreshTableViewController.h"
 
-@interface DemoViewController : UIViewController
+@interface DemoViewController : ZxRefreshTableViewController
 
 
 @end

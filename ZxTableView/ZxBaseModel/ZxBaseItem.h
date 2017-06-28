@@ -10,11 +10,23 @@
 
 @interface ZxBaseItem : NSObject
 
--(id)initWithData:(NSDictionary *)data;
+- (id)initWithData:(NSDictionary *)data;
 
-//property中包含TBCBaseListItem对象数组中，需要设定此规则
--(void)addMappingRuleArrayProperty:(NSString *)propertyName class:(Class)cls;
+// property中如有包含TBCBaseListItem对象的数组，需要设定此规则
+- (void)addMappingRuleArrayProperty:(NSString*)propertyName class:(Class)cls;
+// 所有需要映射的property都需要设定此规则
+- (void)addMappingRuleProperty:(NSString*)propertyName pathInJson:(NSString*)path;
 
--(id)setData:(id)data;
+- (id)setData:(id)data;
+
+@end
+
+@interface ZxClassHelper : NSObject
+
++ (ZxClassHelper *)sharedInstance;
+
+@property (nonatomic, retain) NSMutableDictionary *propertyListCache;
+
+- (NSDictionary *)propertyList:(Class)cls;
 
 @end

@@ -96,7 +96,7 @@
 /*!
  @brief   获取给定的key值，返回类型为NSMutableArray
  @param   path 给定的路径
- @param   otherwise:默认值，当找不到给定的obj，返回otherwise
+ @param   other 默认值，当找不到给定的obj，返回otherwise
  @return  key值 or otherwise
  */
 - (NSMutableArray *)mutableArrayAtPath:(NSString *)path otherwise:(NSMutableArray *)other;
@@ -104,30 +104,30 @@
 //有类型检查的获取NSDictionary类型 否则返回other
 /*!
  @brief   通过给定的path获取NSDictionary
- @param   path:给定的路径
+ @param   path 给定的路径
  @return  key值 or nil
  */
 - (NSDictionary *)dictAtPath:(NSString *)path;
 
 /*!
  @brief   通过给定的path获取NSDictionary
- @param   path:给定的路径
- @param   otherwise:默认值，当找不到给定的obj，返回otherwise
+ @param   path 给定的路径
+ @param   other 默认值，当找不到给定的obj，返回otherwise
  @return  key值 or otherwise
  */
 - (NSDictionary *)dictAtPath:(NSString *)path otherwise:(NSDictionary *)other;
 
 /*!
  @brief   通过给定的path获取NSMutableDictionary
- @param   path:给定的路径
+ @param   path 给定的路径
  @return  key值 or nil
  */
 - (NSMutableDictionary *)mutableDictAtPath:(NSString *)path;
 
 /*!
  @brief   通过给定的path获取NSMutableDictionary
- @param   path:给定的路径
- @param   otherwise:默认值，当找不到给定的obj，返回otherwise
+ @param   path 给定的路径
+ @param   other 默认值，当找不到给定的obj，返回otherwise
  @return  key值 or otherwise
  */
 - (NSMutableDictionary *)mutableDictAtPath:(NSString *)path otherwise:(NSMutableDictionary *)other;
@@ -147,20 +147,20 @@
 /*!
  @brief  安全添加键值对
  @param  anObject value
- @param  aKey
+ @param  aKey key
  */
 - (void)safeSetObject:(id)anObject forKey:(id<NSCopying>)aKey;
 
 /*!
  @brief  安全添加键值对
- @param  anObject: value
- @param  forKey:key
+ @param  object  value
+ @param  aKey key
  */
 - (void)safeSetObject:(id)object forKeyedSubscript:(id < NSCopying >)aKey;
 
 /*!
  @brief  安全移除key
- @param  forKey:key
+ @param  aKey key
  */
 - (void)safeRemoveObjectForKey:(id)aKey;
 

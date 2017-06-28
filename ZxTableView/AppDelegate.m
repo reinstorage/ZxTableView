@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DemoViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    DemoViewController *mainVC = [[DemoViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.window setRootViewController: mainVC];
     return YES;
 }
 

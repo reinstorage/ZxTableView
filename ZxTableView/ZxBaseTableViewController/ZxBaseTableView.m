@@ -28,43 +28,40 @@
     }
     return self;
 }
--(void)setZxDataSource:(id<ZxTableViewDataSource>)ZxDataSource{
-    if (_ZxDataSource != ZxDataSource) {
-        _ZxDataSource = ZxDataSource;
-        self.dataSource = ZxDataSource;
+-(void)setZxDataSource:(id<ZxTableViewDataSource>)zxDataSource{
+    if (_ZxDataSource != zxDataSource) {
+        _ZxDataSource = zxDataSource;
+        self.dataSource = zxDataSource;
     }
 }
 
 #pragma mark 上拉加载和下拉刷新
 
--(void)setIsNeedPullDownToRefreshAction:(BOOL)isNeedPullDownToRefreshAction{
-    if (_isNeedPullDownToRefreshAction == isNeedPullDownToRefreshAction) {
+-(void)setIsNeedPullDownToRefreshAction:(BOOL)isEnable{
+    if (_isNeedPullDownToRefreshAction == isEnable) {
         return;
     }
-    
-    _isNeedPullDownToRefreshAction = isNeedPullDownToRefreshAction;
-    
-    __block typeof (self) weakSelf = self;
+    _isNeedPullDownToRefreshAction = isEnable;
+    __block typeof(self) weakSelf = self;
     if (_isNeedPullDownToRefreshAction) {
-        self.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+        self.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             if ([weakSelf.ZxDelegate respondsToSelector:@selector(pullDownToRefreshAction)]) {
                 [weakSelf.ZxDelegate pullDownToRefreshAction];
             }
         }];
+        
     }
 }
 
 
--(void)setIsNeedPullUpToRefreshAction:(BOOL)isNeedPullUpToRefreshAction{
-    if (_isNeedPullUpToRefreshAction == isNeedPullUpToRefreshAction) {
+-(void)setIsNeedPullUpToRefreshAction:(BOOL)isEnable{
+    if (_isNeedPullUpToRefreshAction == isEnable) {
         return;
     }
-    
-    _isNeedPullUpToRefreshAction = isNeedPullUpToRefreshAction;
-    __block typeof (self) weakSelf = self;
-    
+    _isNeedPullUpToRefreshAction = isEnable;
+    __block typeof(self) weakSelf = self;
     if (_isNeedPullUpToRefreshAction) {
-        self.mj_footer = [MJRefreshFooter footerWithRefreshingBlock:^{
+        self.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingBlock:^{
             if ([weakSelf.ZxDelegate respondsToSelector:@selector(pullUpToRefreshAction)]) {
                 [weakSelf.ZxDelegate pullUpToRefreshAction];
             }
@@ -105,29 +102,37 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-#pragma warning 写到在这里了
+
+    if([self.ZxDelegate respondsToSelector:@selector(didSelectObject:atIndexPath:)]){
+        id<ZxTableViewDataSource> dataSource = (id<ZxTableViewDataSource>)tableView.dataSource;
+        id object = [dataSource tableView:tableView objectForRowAtIndexPath:indexPath];
+        [self.ZxDelegate didSelectObject:object atIndexPath:indexPath];
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+    else if ([self.ZxDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]){
+        [self.ZxDelegate tableView:tableView didSelectRowAtIndexPath:indexPath];
+    }
 }
 
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if ([self.ZxDelegate respondsToSelector:@selector(headerViewForSectionObject:atSection:)]) {
+        id<ZxTableViewDataSource> dataSource = (id<ZxTableViewDataSource>)tableView.dataSource;
+        ZxTableViewSectionObject *sectionObject = [((ZxTableViewDataSource *)dataSource).sections objectAtIndex:section];
+        return [self.ZxDelegate headerViewForSectionObject:sectionObject atSection:section];
+    }
+    else if ([self.ZxDelegate respondsToSelector:@selector(tableView:viewForHeaderInSection:)]){
+        return [self.ZxDelegate tableView:tableView viewForHeaderInSection:section];
+    }
+    return nil;
+}
 
+#pragma mark - 传递原生协议
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self.ZxDelegate respondsToSelector:@selector(tableView:willDisplayCell:forRowAtIndexPath:)]) {
+        [self.ZxDelegate tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+    }
+}
 
 
 @end
